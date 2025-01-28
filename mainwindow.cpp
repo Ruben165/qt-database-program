@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     setupUi(this);
 
     // Please Change the DB path according to your configuration. You don't have to make the DB manually first.
-    QString path_db = "C:\\Users\\Ruben\\Desktop\\Kuliah\\Semester7\\LEC\\CrossPlatformApplicationDevelopment\\UAS_CPAD\\NOMOR_1\\Point_of_Sale.db";
+    QString path_db = ".\\Point_of_Sale.db";
 
     m_db = QSqlDatabase::addDatabase("QSQLITE");
     m_db.setDatabaseName(path_db);
